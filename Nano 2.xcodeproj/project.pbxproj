@@ -7,35 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38BCFD462A1FC0A400DEA5D8 /* NeumorphicStyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCFD452A1FC0A400DEA5D8 /* NeumorphicStyleTextField.swift */; };
+		38BCFD4A2A1FC31300DEA5D8 /* LeaderboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCFD492A1FC31300DEA5D8 /* LeaderboardScreen.swift */; };
+		38BCFD4C2A20466800DEA5D8 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCFD4B2A20466800DEA5D8 /* RoundedCorner.swift */; };
+		38CC5F042A1F99B500086BE0 /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC5F032A1F99B500086BE0 /* DefaultView.swift */; };
+		38CC5F0B2A1FB56800086BE0 /* Leaderboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38CC5F092A1FB56800086BE0 /* Leaderboard.xcdatamodeld */; };
+		38CC5F0D2A1FB65200086BE0 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC5F0C2A1FB65200086BE0 /* CoreDataViewModel.swift */; };
 		9128AD122A1B36AD00D30E98 /* Nano_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD112A1B36AD00D30E98 /* Nano_2App.swift */; };
 		9128AD142A1B36AD00D30E98 /* QuestionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD132A1B36AD00D30E98 /* QuestionPage.swift */; };
 		9128AD162A1B36AF00D30E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9128AD152A1B36AF00D30E98 /* Assets.xcassets */; };
 		9128AD192A1B36AF00D30E98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9128AD182A1B36AF00D30E98 /* Preview Assets.xcassets */; };
 		9128AD202A1B682400D30E98 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD1F2A1B682400D30E98 /* LottieView.swift */; };
 		9128AD2A2A1B6CE300D30E98 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9128AD292A1B6CE300D30E98 /* Lottie */; };
-		9128AD2C2A1B7D5400D30E98 /* FalsePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2B2A1B7D5400D30E98 /* FalsePage.swift */; };
-		9128AD2E2A1C855000D30E98 /* Mainpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2D2A1C855000D30E98 /* Mainpage.swift */; };
-		9128AD302A1CC46100D30E98 /* TruePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2F2A1CC46100D30E98 /* TruePage.swift */; };
-		9128AD322A1CD2EC00D30E98 /* NotifPopOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD312A1CD2EC00D30E98 /* NotifPopOut.swift */; };
-		9128AD342A1DE2F600D30E98 /* GyroscopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD332A1DE2F600D30E98 /* GyroscopeView.swift */; };
-		9128AD362A1E03A000D30E98 /* ScoreRecapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD352A1E03A000D30E98 /* ScoreRecapPage.swift */; };
-		9128AD382A1F538500D30E98 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD372A1F538500D30E98 /* Data.swift */; };
+		9128AD2C2A1B7D5400D30E98 /* FalseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2B2A1B7D5400D30E98 /* FalseView.swift */; };
+		9128AD2E2A1C855000D30E98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2D2A1C855000D30E98 /* ContentView.swift */; };
+		9128AD302A1CC46100D30E98 /* TrueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD2F2A1CC46100D30E98 /* TrueView.swift */; };
+		9128AD322A1CD2EC00D30E98 /* QuitConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD312A1CD2EC00D30E98 /* QuitConfirmationView.swift */; };
+		9128AD342A1DE2F600D30E98 /* AccelerometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD332A1DE2F600D30E98 /* AccelerometerManager.swift */; };
+		9128AD362A1E03A000D30E98 /* ScoreRecapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD352A1E03A000D30E98 /* ScoreRecapScreen.swift */; };
+		9128AD382A1F538500D30E98 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128AD372A1F538500D30E98 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38BCFD452A1FC0A400DEA5D8 /* NeumorphicStyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicStyleTextField.swift; sourceTree = "<group>"; };
+		38BCFD492A1FC31300DEA5D8 /* LeaderboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardScreen.swift; sourceTree = "<group>"; };
+		38BCFD4B2A20466800DEA5D8 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		38CC5F032A1F99B500086BE0 /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
+		38CC5F0A2A1FB56800086BE0 /* Leaderboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Leaderboard.xcdatamodel; sourceTree = "<group>"; };
+		38CC5F0C2A1FB65200086BE0 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		9128AD0E2A1B36AD00D30E98 /* Nano 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9128AD112A1B36AD00D30E98 /* Nano_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_2App.swift; sourceTree = "<group>"; };
 		9128AD132A1B36AD00D30E98 /* QuestionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPage.swift; sourceTree = "<group>"; };
 		9128AD152A1B36AF00D30E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9128AD182A1B36AF00D30E98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9128AD1F2A1B682400D30E98 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		9128AD2B2A1B7D5400D30E98 /* FalsePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalsePage.swift; sourceTree = "<group>"; };
-		9128AD2D2A1C855000D30E98 /* Mainpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainpage.swift; sourceTree = "<group>"; };
-		9128AD2F2A1CC46100D30E98 /* TruePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruePage.swift; sourceTree = "<group>"; };
-		9128AD312A1CD2EC00D30E98 /* NotifPopOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifPopOut.swift; sourceTree = "<group>"; };
-		9128AD332A1DE2F600D30E98 /* GyroscopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeView.swift; sourceTree = "<group>"; };
-		9128AD352A1E03A000D30E98 /* ScoreRecapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRecapPage.swift; sourceTree = "<group>"; };
-		9128AD372A1F538500D30E98 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		9128AD2B2A1B7D5400D30E98 /* FalseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseView.swift; sourceTree = "<group>"; };
+		9128AD2D2A1C855000D30E98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9128AD2F2A1CC46100D30E98 /* TrueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueView.swift; sourceTree = "<group>"; };
+		9128AD312A1CD2EC00D30E98 /* QuitConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitConfirmationView.swift; sourceTree = "<group>"; };
+		9128AD332A1DE2F600D30E98 /* AccelerometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerManager.swift; sourceTree = "<group>"; };
+		9128AD352A1E03A000D30E98 /* ScoreRecapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRecapScreen.swift; sourceTree = "<group>"; };
+		9128AD372A1F538500D30E98 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38BCFD472A1FC2F800DEA5D8 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				38BCFD482A1FC30700DEA5D8 /* Screen */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		38BCFD482A1FC30700DEA5D8 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				38BCFD492A1FC31300DEA5D8 /* LeaderboardScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		38CC5EFD2A1F971400086BE0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				38CC5F0C2A1FB65200086BE0 /* CoreDataViewModel.swift */,
+				9128AD332A1DE2F600D30E98 /* AccelerometerManager.swift */,
+				9128AD1F2A1B682400D30E98 /* LottieView.swift */,
+				38BCFD452A1FC0A400DEA5D8 /* NeumorphicStyleTextField.swift */,
+				38BCFD4B2A20466800DEA5D8 /* RoundedCorner.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		38CC5EFF2A1F98F300086BE0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				38BCFD472A1FC2F800DEA5D8 /* Leaderboard */,
+				38CC5F052A1F9AAB00086BE0 /* ScoreRecap */,
+				38CC5F002A1F992A00086BE0 /* Question */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		38CC5F002A1F992A00086BE0 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				38CC5F082A1FB4AA00086BE0 /* Models */,
+				38CC5F022A1F993E00086BE0 /* Views */,
+				38CC5F012A1F993500086BE0 /* Screen */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		38CC5F012A1F993500086BE0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9128AD132A1B36AD00D30E98 /* QuestionPage.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		38CC5F022A1F993E00086BE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38CC5F032A1F99B500086BE0 /* DefaultView.swift */,
+				9128AD2F2A1CC46100D30E98 /* TrueView.swift */,
+				9128AD2B2A1B7D5400D30E98 /* FalseView.swift */,
+				9128AD312A1CD2EC00D30E98 /* QuitConfirmationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		38CC5F052A1F9AAB00086BE0 /* ScoreRecap */ = {
+			isa = PBXGroup;
+			children = (
+				38CC5F062A1F9AB400086BE0 /* Screen */,
+			);
+			path = ScoreRecap;
+			sourceTree = "<group>";
+		};
+		38CC5F062A1F9AB400086BE0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9128AD352A1E03A000D30E98 /* ScoreRecapScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		38CC5F082A1FB4AA00086BE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9128AD372A1F538500D30E98 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9128AD052A1B36AD00D30E98 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +172,13 @@
 		9128AD102A1B36AD00D30E98 /* Nano 2 */ = {
 			isa = PBXGroup;
 			children = (
+				38CC5EFD2A1F971400086BE0 /* Base */,
+				38CC5EFF2A1F98F300086BE0 /* Features */,
 				9128AD112A1B36AD00D30E98 /* Nano_2App.swift */,
-				9128AD132A1B36AD00D30E98 /* QuestionPage.swift */,
-				9128AD2B2A1B7D5400D30E98 /* FalsePage.swift */,
-				9128AD2F2A1CC46100D30E98 /* TruePage.swift */,
-				9128AD2D2A1C855000D30E98 /* Mainpage.swift */,
-				9128AD312A1CD2EC00D30E98 /* NotifPopOut.swift */,
-				9128AD352A1E03A000D30E98 /* ScoreRecapPage.swift */,
-				9128AD332A1DE2F600D30E98 /* GyroscopeView.swift */,
+				9128AD2D2A1C855000D30E98 /* ContentView.swift */,
+				38CC5F092A1FB56800086BE0 /* Leaderboard.xcdatamodeld */,
 				9128AD152A1B36AF00D30E98 /* Assets.xcassets */,
 				9128AD172A1B36AF00D30E98 /* Preview Content */,
-				9128AD1F2A1B682400D30E98 /* LottieView.swift */,
-				9128AD372A1F538500D30E98 /* Data.swift */,
 			);
 			path = "Nano 2";
 			sourceTree = "<group>";
@@ -169,15 +267,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9128AD302A1CC46100D30E98 /* TruePage.swift in Sources */,
-				9128AD382A1F538500D30E98 /* Data.swift in Sources */,
+				9128AD302A1CC46100D30E98 /* TrueView.swift in Sources */,
+				9128AD382A1F538500D30E98 /* Question.swift in Sources */,
 				9128AD142A1B36AD00D30E98 /* QuestionPage.swift in Sources */,
-				9128AD322A1CD2EC00D30E98 /* NotifPopOut.swift in Sources */,
-				9128AD362A1E03A000D30E98 /* ScoreRecapPage.swift in Sources */,
+				9128AD322A1CD2EC00D30E98 /* QuitConfirmationView.swift in Sources */,
+				9128AD362A1E03A000D30E98 /* ScoreRecapScreen.swift in Sources */,
+				38BCFD462A1FC0A400DEA5D8 /* NeumorphicStyleTextField.swift in Sources */,
+				38CC5F0B2A1FB56800086BE0 /* Leaderboard.xcdatamodeld in Sources */,
+				38CC5F0D2A1FB65200086BE0 /* CoreDataViewModel.swift in Sources */,
+				38BCFD4C2A20466800DEA5D8 /* RoundedCorner.swift in Sources */,
 				9128AD122A1B36AD00D30E98 /* Nano_2App.swift in Sources */,
-				9128AD342A1DE2F600D30E98 /* GyroscopeView.swift in Sources */,
-				9128AD2C2A1B7D5400D30E98 /* FalsePage.swift in Sources */,
-				9128AD2E2A1C855000D30E98 /* Mainpage.swift in Sources */,
+				9128AD342A1DE2F600D30E98 /* AccelerometerManager.swift in Sources */,
+				9128AD2C2A1B7D5400D30E98 /* FalseView.swift in Sources */,
+				38BCFD4A2A1FC31300DEA5D8 /* LeaderboardScreen.swift in Sources */,
+				38CC5F042A1F99B500086BE0 /* DefaultView.swift in Sources */,
+				9128AD2E2A1C855000D30E98 /* ContentView.swift in Sources */,
 				9128AD202A1B682400D30E98 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano 2/Preview Content\"";
-				DEVELOPMENT_TEAM = 8938B5T7K4;
+				DEVELOPMENT_TEAM = UWJ26F79V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano 2/Preview Content\"";
-				DEVELOPMENT_TEAM = 8938B5T7K4;
+				DEVELOPMENT_TEAM = UWJ26F79V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,6 +504,19 @@
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		38CC5F092A1FB56800086BE0 /* Leaderboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38CC5F0A2A1FB56800086BE0 /* Leaderboard.xcdatamodel */,
+			);
+			currentVersion = 38CC5F0A2A1FB56800086BE0 /* Leaderboard.xcdatamodel */;
+			path = Leaderboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9128AD062A1B36AD00D30E98 /* Project object */;
 }

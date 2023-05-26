@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-struct ScoreRecapPage: View {
+struct ScoreRecapScreen: View {
+    
+    @StateObject var vm = CoreDataViewModel()
+    @State var textInput: String = ""
+    @State var navigate: Bool = true
+    let numberCorrect: Int
+    
     var body: some View {
         ZStack {
             Image ("finalBG")
@@ -37,7 +43,7 @@ struct ScoreRecapPage: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 301, height: 151)
-                    .padding(.top)
+                        .padding(.top)
                     
                     VStack {
                         HStack {
@@ -45,43 +51,49 @@ struct ScoreRecapPage: View {
                                 .font(.system(size: 24))
                                 .foregroundColor(.white)
                                 .bold()
-                            Text ("8/10")
+                            Text ("\(numberCorrect)/10")
                                 .font(.system(size: 24))
                                 .foregroundColor(.white)
                         }
-                        .padding(.top, -30)
-                        .padding(.trailing, 90)
-                        
-                        HStack {
-                            Text ("Time:")
-                                .font(.system(size: 24))
-                                .foregroundColor(.white)
-                                .bold()
-                            Text ("60s")
-                                .font(.system(size: 24))
-                                .foregroundColor(.white)
-                        }
-                        .padding(.top, -10)
-                        .padding(.trailing, 145)
                     }
                 }
-                Image ("buttonleaderboard")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 330, height: 46)
-                    .padding(.top, 10)
-                    .onTapGesture {
-                        print("Go to leaderboard")
+                
+                VStack {
+                    Text("Type your name")
+                        .font(.title3)
+                        .bold()
+                        .foregroundColor(.black)
+                    
+                    HStack {
+                        NeumorphicStyleTextField(textInput: $textInput, textField: TextField("", text: $textInput))
+                            .padding([.leading, .trailing], 55)
                     }
+                }
+                .padding(.top, 10)
+                
+                NavigationLink {
+                    LeaderboardScreen(data: Player(correct: Int16(numberCorrect), name: textInput))
+                } label: {
+                    Image ("buttonleaderboard")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 330, height: 46)
+                        .padding(.top, 10)
+                        .brightness(textInput.count == 0 ? 0.4 : 0)
+                }
+                .disabled(textInput.count == 0 ? true : false)
             }
             .padding(.bottom, 80)
-           
+        }
+        .navigationBarBackButtonHidden(true)
+        .onDisappear() {
+            vm.addLeaderboard(player: Player(correct: Int16(numberCorrect), name: textInput))
         }
     }
     
     struct ScoreRecapPage_Previews: PreviewProvider {
         static var previews: some View {
-            ScoreRecapPage()
+            ScoreRecapScreen(numberCorrect: 0)
         }
     }
 }

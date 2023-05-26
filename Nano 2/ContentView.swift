@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Mainpage: View {
+struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
@@ -33,11 +33,12 @@ struct Mainpage: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 struct Mainpage_Previews: PreviewProvider {
     static var previews: some View {
-        Mainpage()
+        ContentView()
     }
 }
